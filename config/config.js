@@ -3,11 +3,8 @@ import profile from './profile.png'
 import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import {
   faAngleRight,
-  faDownload,
   faEnvelope,
   faFile,
-  faFileDownload,
-  faRotateLeft,
 } from '@fortawesome/free-solid-svg-icons'
 
 export const navigation = {
@@ -73,7 +70,6 @@ export const projects = {
         },
       ],
       img: 'https://github.com/ChrisCash2020/Images/raw/master/movie/demo.gif',
-      flip: faRotateLeft,
     },
     {
       title: 'Mortal Kombat Wikipedia',
@@ -87,7 +83,6 @@ export const projects = {
         },
       ],
       img: 'https://github.com/ChrisCash2020/Images/raw/master/mk11/mk11.gif',
-      flip: faRotateLeft,
     },
     {
       title: 'Vinyl Emporium',
@@ -101,7 +96,6 @@ export const projects = {
         },
       ],
       img: 'https://github.com/ChrisCash2020/Images/raw/master/music/demo.gif',
-      flip: faRotateLeft,
     },
   ],
 }

@@ -16,7 +16,6 @@ export const Projects = ({ title, cards }) => {
               code={value.code}
               demo={value.demo}
               img={value.img}
-              flip={value.flip}
             />
           ))}
         </div>
@@ -25,25 +24,11 @@ export const Projects = ({ title, cards }) => {
   )
 }
 
-export const Card = ({ title, description, icons, img, flip }) => {
+export const Card = ({ title, description, icons, img }) => {
   return (
     <div className='card py-3 px-3 mx-sm-4 my-4 card-work flip-card'>
       <div class='flip-card-inner'>
         <div className='flip-card-front d-flex flex-column '>
-          <a
-            class='special'
-            style={{
-              alignSelf: 'flex-end',
-              marginBottom: '10px',
-            }}
-          >
-            <FontAwesomeIcon
-              className='icon-style mx-3'
-              icon={flip}
-              style={{ border: 'none' }}
-              size='2x'
-            />
-          </a>
           <h4 className='text-primary'>{title}</h4>
           <p className='text-dark'>{description}</p>
         </div>

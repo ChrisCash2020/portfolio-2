@@ -1,10 +1,8 @@
 // Custom.scss
 // https://getbootstrap.com/docs/5.0/customize/sass/
 
-
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "~bootstrap/scss/functions";
-
+@import '~bootstrap/scss/functions';
 
 // 2. Include any default variable overrides here
 
@@ -17,19 +15,18 @@
 // $tertiary-font: #365B6D;
 // $inverted-font: #FFFFFF;
 
-// bootstrap overrides 
-$primary: #365B6D;
-$secondary: #F7F7F7;
-$light: #FFFFFF;
+// bootstrap overrides
+$primary: #365b6d;
+$secondary: #f7f7f7;
+$light: #ffffff;
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
-$font-family-sans-serif: -apple-system, 'Barlow', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-sans-serif: -apple-system, 'Barlow', sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
 $card-border-radius: 15px;
 
-
-
-// font 
+// font
 // Title
 // font-family: Barlow;
 // font-style: normal;
@@ -65,51 +62,47 @@ $card-border-radius: 15px;
 // font-size: 15px;
 // line-height: 18px;
 
-
-
 // 3. Include remainder of required Bootstrap stylesheets
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/maps";
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/utilities";
-
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/maps';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/utilities';
 
 // Layout & components (optional Bootstrap components)
-@import "~bootstrap/scss/root";
-@import "~bootstrap/scss/reboot";
-@import "~bootstrap/scss/type";
-@import "~bootstrap/scss/images";
-@import "~bootstrap/scss/containers";
-@import "~bootstrap/scss/grid";
-@import "~bootstrap/scss/tables";
-@import "~bootstrap/scss/forms";
-@import "~bootstrap/scss/buttons";
-@import "~bootstrap/scss/transitions";
-@import "~bootstrap/scss/dropdown";
-@import "~bootstrap/scss/button-group";
-@import "~bootstrap/scss/nav";
-@import "~bootstrap/scss/navbar";
-@import "~bootstrap/scss/card";
-@import "~bootstrap/scss/accordion";
-@import "~bootstrap/scss/breadcrumb";
-@import "~bootstrap/scss/pagination";
-@import "~bootstrap/scss/badge";
-@import "~bootstrap/scss/alert";
-@import "~bootstrap/scss/progress";
-@import "~bootstrap/scss/list-group";
-@import "~bootstrap/scss/close";
-@import "~bootstrap/scss/toasts";
-@import "~bootstrap/scss/modal";
-@import "~bootstrap/scss/tooltip";
-@import "~bootstrap/scss/popover";
-@import "~bootstrap/scss/carousel";
-@import "~bootstrap/scss/spinners";
-@import "~bootstrap/scss/offcanvas";
+@import '~bootstrap/scss/root';
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/images';
+@import '~bootstrap/scss/containers';
+@import '~bootstrap/scss/grid';
+@import '~bootstrap/scss/tables';
+@import '~bootstrap/scss/forms';
+@import '~bootstrap/scss/buttons';
+@import '~bootstrap/scss/transitions';
+@import '~bootstrap/scss/dropdown';
+@import '~bootstrap/scss/button-group';
+@import '~bootstrap/scss/nav';
+@import '~bootstrap/scss/navbar';
+@import '~bootstrap/scss/card';
+@import '~bootstrap/scss/accordion';
+@import '~bootstrap/scss/breadcrumb';
+@import '~bootstrap/scss/pagination';
+@import '~bootstrap/scss/badge';
+@import '~bootstrap/scss/alert';
+@import '~bootstrap/scss/progress';
+@import '~bootstrap/scss/list-group';
+@import '~bootstrap/scss/close';
+@import '~bootstrap/scss/toasts';
+@import '~bootstrap/scss/modal';
+@import '~bootstrap/scss/tooltip';
+@import '~bootstrap/scss/popover';
+@import '~bootstrap/scss/carousel';
+@import '~bootstrap/scss/spinners';
+@import '~bootstrap/scss/offcanvas';
 // Helpers
-@import "~bootstrap/scss/helpers";
+@import '~bootstrap/scss/helpers';
 // Utilities
-@import "~bootstrap/scss/utilities/api";
-
+@import '~bootstrap/scss/utilities/api';
 
 // 5. Add additional custom code here
 html {
@@ -128,25 +121,139 @@ a {
 
 .icon-style {
   font-family: $font-family-sans-serif;
-  color: $primary;
 }
 
-
 .card-work {
-  transition: box-shadow .3s;
+  transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-work:hover {
-  box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 
 .card-image {
-  transition: all .3s;
+  transition: all 0.3s;
   border-radius: $card-border-radius;
-  box-shadow: 1rem 1rem $primary;
+  box-shadow: 1rem 1rem black;
 }
 
 .card-image:hover {
   transform: translate(-0.5rem, -0.5rem);
-  box-shadow: 2rem 2rem $primary;
+  box-shadow: 2rem 2rem black;
+}
+.skills-img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+.special,
+.skills,
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.skills li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills li img {
+  height: 70px;
+  width: 70px;
+  object-fit: scale-down;
+}
+.links a {
+  cursor: pointer;
+}
+.special svg {
+  // -moz-transition: background-color 0.2s ease-in-out;
+  // -webkit-transition: background-color 0.2s ease-in-out;
+  // -ms-transition: background-color 0.2s ease-in-out;
+  // transition: background-color 0.2s ease-in-out;
+  border-radius: 100%;
+  border: solid 2px rgba(33, 33, 33, 0.2);
+  vertical-align: middle;
+  width: 2em;
+  font-size: 0.7em;
+  font-weight: 700;
+  line-height: 1.75em;
+  height: 2em;
+  text-indent: 0.15em;
+  vertical-align: middle;
+  color: rgba(33, 33, 33, 0.2);
+  margin-right: 0.85em;
+}
+.flip-card {
+  perspective: 1000px;
+  position: relative;
+  height: 17em;
+  width: 22em;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.flip-card-front h4 {
+  text-align: center;
+}
+/* Style the back side */
+.flip-card-back {
+  background-color: transparent;
+  color: white;
+  transform: rotateY(180deg);
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.socialicons {
+  margin: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: all 0.8s;
+}
+.skills-tabs {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills-tab {
+  flex-grow: 1;
+  text-align: center;
+}
+.nav-item {
+  width: 50%;
+}
+.nav-item button {
+  width: 100%;
 }

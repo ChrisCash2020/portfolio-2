@@ -39,7 +39,7 @@ export default function Home() {
           <Tab
             tabClassName='skills-tab lead'
             eventKey='first'
-            title='Front-End'
+            title='Front end'
           >
             <ul className='skills py-4'>
               <li>
@@ -66,7 +66,7 @@ export default function Home() {
           <Tab
             tabClassName='skills-tab lead'
             eventKey='second'
-            title='Back-End'
+            title='Back end'
           >
             <ul className='skills py-4'>
               <li>

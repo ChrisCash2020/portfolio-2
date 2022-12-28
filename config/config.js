@@ -51,7 +51,7 @@ export const intro = {
 export const about = {
   title: 'About',
   description: [
-    'Web developer knowledgeable in UI design, Testing, Debugging, and Maintenance. Able to effectively self-manage during independent projects, as well as collaborating in a team setting. Specialize in MERN software stack and API development.',
+    `Hello, I'm an experienced web developer knowledgable ui design, testing, debugging, and maintenance. I'm also effective at self-managing during independent projects, and collaborating well with a team. I utilize the MERN software stack to make stateful and restful applications.`,
   ],
 }
 
@@ -87,7 +87,7 @@ export const projects = {
     {
       title: 'Vinyl Emporium',
       description:
-        'Developed a sales website where customers can browse and buy vinyls of their favorite albums and songs.',
+        'Developed e-commerce website where customers can browse and buy vinyls of their favorite albums and songs.',
       icons: [
         {
           icon: faAngleRight,

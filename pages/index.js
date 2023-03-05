@@ -1,23 +1,26 @@
-import React, { Fragment } from 'react'
-import { Nav } from '../components/Navbar'
-import { Intro, About } from '../components/Intro'
-import { Projects } from '../components/Work'
-import { Footer } from '../components/Footer'
-import { about, intro, navigation, projects, SEO } from '../config/config'
-import { Header } from '../components/Header'
-import Tabs from 'react-bootstrap/Tabs'
-import Tab from 'react-bootstrap/Tab'
-import react from '../config/react.png'
-import tys from '../config/ts.png'
-import html from '../config/html.png'
-import css from '../config/css1.png'
-import js from '../config/js.png'
-import node from '../config/nodejs.png'
-import express from '../config/express.png'
-import socket from '../config/socketio.png'
-import firebase from '../config/firebase.png'
-import mysql from '../config/mysql.png'
-import jwt from '../config/jwt.png'
+import React, { Fragment } from 'react';
+import { Nav } from '../components/Navbar';
+import { Intro, About } from '../components/Intro';
+import { Projects } from '../components/Work';
+import { Footer } from '../components/Footer';
+import { about, intro, navigation, projects, SEO } from '../config/config';
+import { Header } from '../components/Header';
+import Tabs from 'react-bootstrap/Tabs';
+import Tab from 'react-bootstrap/Tab';
+import react from '../config/react.png';
+import tys from '../config/ts.png';
+import html from '../config/html.png';
+import css from '../config/css1.png';
+import js from '../config/js.png';
+import node from '../config/nodejs.png';
+import express from '../config/express.png';
+import spring from '../config/spring.png';
+import docker from '../config/docker.png';
+import mysql from '../config/mysql.png';
+import psql from '../config/psql.png';
+import jwt from '../config/jwt.png';
+import redux from '../config/redux.png';
+import tailwind from '../config/tailwind.png';
 
 export default function Home() {
   return (
@@ -61,6 +64,12 @@ export default function Home() {
                   src={react.src}
                 />
               </li>
+              <li>
+                <img alt='' src={redux.src} />
+              </li>
+              <li>
+                <img alt='' src={tailwind.src} />
+              </li>
             </ul>
           </Tab>
           <Tab
@@ -79,13 +88,16 @@ export default function Home() {
                 <img alt='' src={mysql.src} />
               </li>
               <li>
+                <img alt='' src={psql.src} />
+              </li>
+              <li>
                 <img alt='' src={jwt.src} />
               </li>
               <li>
-                <img alt='' src={socket.src} />
+                <img alt='' src={spring.src} />
               </li>
               <li>
-                <img alt='' src={firebase.src} />
+                <img alt='' src={docker.src} />
               </li>
             </ul>
           </Tab>
@@ -96,5 +108,5 @@ export default function Home() {
 
       <Footer />
     </Fragment>
-  )
+  );
 }

@@ -1,11 +1,11 @@
-import profile from './profile.png'
+import profile from './profile.png';
 
-import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import {
   faAngleRight,
   faEnvelope,
   faFile,
-} from '@fortawesome/free-solid-svg-icons'
+} from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
   name: 'Christian',
@@ -15,7 +15,7 @@ export const navigation = {
       link: '#projects',
     },
   ],
-}
+};
 export const intro = {
   title: "Hey, I'm Christian",
   description: '',
@@ -46,18 +46,32 @@ export const intro = {
       isPrimary: false,
     },
   ],
-}
+};
 
 export const about = {
   title: 'About',
   description: [
-    `Hello, I'm an experienced web developer knowledgable ui design, testing, debugging, and maintenance. I'm also effective at self-managing during independent projects, and collaborating well with a team. I utilize the MERN software stack to make stateful and restful applications.`,
+    `Hello, I'm an experienced web developer knowledgable ui design, testing, debugging, and maintenance. I'm also effective at self-managing during independent projects, and collaborating well with a team. I utilize the MERN software stack to make great websites`,
   ],
-}
+};
 
 export const projects = {
   title: 'Projects',
   cards: [
+    {
+      title: 'Toulouse Exotica',
+      description: `Developed a food e-commerce website where actions are separated into specific roles such as admin and customer.
+Customers can register/login, update credentials, filter the website's menu, add items to their cart, and checkout.
+`,
+      icons: [
+        {
+          icon: faAngleRight,
+          code: 'https://github.com/ChrisCash2020/food-ecommerce',
+          demo: 'https://toulouse-exotica.netlify.app/',
+        },
+      ],
+      img: 'https://github.com/ChrisCash2020/Images/raw/master/food/demo.gif',
+    },
     {
       title: 'Tinder Clone (movieConnect)',
       description:
@@ -98,7 +112,7 @@ export const projects = {
       img: 'https://github.com/ChrisCash2020/Images/raw/master/music/demo.gif',
     },
   ],
-}
+};
 
 export const contact = {
   title: 'Get in touch',
@@ -122,7 +136,7 @@ export const contact = {
       isPrimary: false,
     },
   ],
-}
+};
 
 // SEARCH ENGINE
 export const SEO = {
@@ -131,4 +145,4 @@ export const SEO = {
   description:
     'Web developer knowledgeable in ui design, testing, debugging, and maintenance.',
   image: profile.src,
-}
+};

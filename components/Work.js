@@ -1,6 +1,6 @@
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Link from 'next/link'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 export const Projects = ({ title, cards }) => {
   return (
     <div id='projects' className='bg-primary py-5 px-5'>
@@ -21,18 +21,18 @@ export const Projects = ({ title, cards }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export const Card = ({ title, description, icons, img }) => {
   return (
     <div className='card py-3 px-3 mx-sm-4 my-4 card-work flip-card'>
       <div class='flip-card-inner'>
-        <div className='flip-card-front d-flex flex-column '>
+        <div className='flip-card-back d-flex flex-column '>
           <h4 className='text-primary'>{title}</h4>
           <p className='text-dark'>{description}</p>
         </div>
-        <div className='flip-card-back'>
+        <div className='flip-card-front'>
           <img className='skills-img' src={img} alt='Avatar' />
         </div>
       </div>
@@ -73,5 +73,5 @@ export const Card = ({ title, description, icons, img }) => {
           ))}
       </div>
     </div>
-  )
-}
+  );
+};

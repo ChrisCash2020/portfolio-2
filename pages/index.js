@@ -14,11 +14,13 @@ import css from '../config/css1.png';
 import js from '../config/js.png';
 import node from '../config/nodejs.png';
 import express from '../config/express.png';
+import elasticsearch from '../config/elasticsearch.png';
 import spring from '../config/spring.png';
 import docker from '../config/docker.png';
 import mysql from '../config/mysql.png';
 import psql from '../config/psql.png';
 import jwt from '../config/jwt.png';
+import mui from '../config/mui.png';
 import redux from '../config/redux.png';
 import tailwind from '../config/tailwind.png';
 
@@ -70,6 +72,9 @@ export default function Home() {
               <li>
                 <img alt='' src={tailwind.src} />
               </li>
+              <li>
+                <img alt='' src={mui.src} />
+              </li>
             </ul>
           </Tab>
           <Tab
@@ -98,6 +103,9 @@ export default function Home() {
               </li>
               <li>
                 <img alt='' src={docker.src} />
+              </li>
+              <li>
+                <img alt='' src={elasticsearch.src} />
               </li>
             </ul>
           </Tab>

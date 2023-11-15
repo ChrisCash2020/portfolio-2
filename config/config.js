@@ -51,7 +51,7 @@ export const intro = {
 export const about = {
   title: 'About',
   description: [
-    `Hello, I'm an experienced web developer knowledgable ui design, testing, debugging, and maintenance. I'm also effective at self-managing during independent projects, and collaborating well with a team. I utilize the MERN software stack to make great websites`,
+    `Hello, I'm an experienced software developer knowledgable ui design, testing, debugging, and maintenance. I'm also effective at self-managing during independent projects, and collaborating well with a team. I utilize the Spring-React and MERN software stack to make great websites`,
   ],
 };
 

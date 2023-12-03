@@ -49,9 +49,9 @@ export const intro = {
 };
 
 export const about = {
-  title: 'About',
+  title: 'Who I am',
   description: [
-    `Hello, I'm an experienced software developer knowledgable ui design, testing, debugging, and maintenance. I'm also effective at self-managing during independent projects, and collaborating well with a team. I utilize the Spring-React and MERN software stack to make great websites`,
+    `I am a seasoned full stack web developer with a passion for crafting intuitive and visually appealing user interfaces. With a robust skill set that encompasses ui design, unit testing, debugging, and maintenance, I bring a comprehensive approach to web development. I specialize in both the Spring/React stack and the MERN stack, showcasing my versatility and proficiency in developing scalable and high-performance applications. Whether it's building the server-side logic with Spring Boot or creating dynamic and responsive front-end experiences with React, my strength lies in delivering complete and integrated solutions. Explore my portfolio to discover a collection of projects that showcase my ability to tackle diverse challenges. From e-commerce to social media platforms, each project reflects my commitment to innovation and excellence.`,
   ],
 };
 

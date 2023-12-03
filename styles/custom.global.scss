@@ -16,9 +16,9 @@
 // $inverted-font: #FFFFFF;
 
 // bootstrap overrides
-$primary: #365b6d;
-$secondary: #f7f7f7;
-$light: #ffffff;
+$primary: #ff8a37;
+$secondary: rgb(37, 37, 37);
+$light: #f3f3f3;
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
 $font-family-sans-serif: -apple-system, 'Barlow', sans-serif,
@@ -136,7 +136,7 @@ a {
 .card-image {
   transition: all 0.3s;
   border-radius: $card-border-radius;
-  box-shadow: 1rem 1rem black;
+  box-shadow: 1rem 1rem transparent;
 }
 
 .card-image:hover {
@@ -256,4 +256,16 @@ a {
 }
 .nav-item button {
   width: 100%;
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: white;
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.nav-tabs {
+  border-color: $primary;
+  --bs-nav-tabs-link-hover-border-color: transparent;
+  --bs-nav-tabs-border-width: 2px;
 }

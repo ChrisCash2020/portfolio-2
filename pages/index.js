@@ -36,80 +36,81 @@ export default function Home() {
         icons={intro.icons}
       />
       <About title={about.title} description={about.description} />
+      <div className='bg-white'>
+        <div className=' container px-2 py-5 d-flex flex-column'>
+          <h1 className='text-primary fw-bold'>Skills</h1>
 
-      <div className=' container px-2 d-flex flex-column'>
-        <h1 className='text-primary fw-bold'>Skills</h1>
-
-        <Tabs className='skills-tabs' defaultActiveKey='first'>
-          <Tab
-            tabClassName='skills-tab lead'
-            eventKey='first'
-            title='Front end'
-          >
-            <ul className='skills py-4'>
-              <li>
-                <img alt='' src={html.src} />
-              </li>
-              <li>
-                <img alt='' src={css.src} />
-              </li>
-              <li>
-                <img alt='' src={tys.src} />
-              </li>
-              <li>
-                <img alt='' src={js.src} />
-              </li>
-              <li>
-                <img
-                  style={{ width: '60px', height: '60px' }}
-                  alt=''
-                  src={react.src}
-                />
-              </li>
-              <li>
-                <img alt='' src={redux.src} />
-              </li>
-              <li>
-                <img alt='' src={tailwind.src} />
-              </li>
-              <li>
-                <img alt='' src={mui.src} />
-              </li>
-            </ul>
-          </Tab>
-          <Tab
-            tabClassName='skills-tab lead'
-            eventKey='second'
-            title='Back end'
-          >
-            <ul className='skills py-4'>
-              <li>
-                <img alt='' src={node.src} />
-              </li>
-              <li>
-                <img alt='' src={express.src} />
-              </li>
-              <li>
-                <img alt='' src={mysql.src} />
-              </li>
-              <li>
-                <img alt='' src={psql.src} />
-              </li>
-              <li>
-                <img alt='' src={jwt.src} />
-              </li>
-              <li>
-                <img alt='' src={spring.src} />
-              </li>
-              <li>
-                <img alt='' src={docker.src} />
-              </li>
-              <li>
-                <img alt='' src={elasticsearch.src} />
-              </li>
-            </ul>
-          </Tab>
-        </Tabs>
+          <Tabs className='skills-tabs' defaultActiveKey='first'>
+            <Tab
+              tabClassName='skills-tab lead'
+              eventKey='first'
+              title='Front-end'
+            >
+              <ul className='skills py-4'>
+                <li>
+                  <img alt='' src={html.src} />
+                </li>
+                <li>
+                  <img alt='' src={css.src} />
+                </li>
+                <li>
+                  <img alt='' src={tys.src} />
+                </li>
+                <li>
+                  <img alt='' src={js.src} />
+                </li>
+                <li>
+                  <img
+                    style={{ width: '60px', height: '60px' }}
+                    alt=''
+                    src={react.src}
+                  />
+                </li>
+                <li>
+                  <img alt='' src={redux.src} />
+                </li>
+                <li>
+                  <img alt='' src={tailwind.src} />
+                </li>
+                <li>
+                  <img alt='' src={mui.src} />
+                </li>
+              </ul>
+            </Tab>
+            <Tab
+              tabClassName='skills-tab lead'
+              eventKey='second'
+              title='Back-end'
+            >
+              <ul className='skills py-4'>
+                <li>
+                  <img alt='' src={node.src} />
+                </li>
+                <li>
+                  <img alt='' src={express.src} />
+                </li>
+                <li>
+                  <img alt='' src={mysql.src} />
+                </li>
+                <li>
+                  <img alt='' src={psql.src} />
+                </li>
+                <li>
+                  <img alt='' src={jwt.src} />
+                </li>
+                <li>
+                  <img alt='' src={spring.src} />
+                </li>
+                <li>
+                  <img alt='' src={docker.src} />
+                </li>
+                <li>
+                  <img alt='' src={elasticsearch.src} />
+                </li>
+              </ul>
+            </Tab>
+          </Tabs>
+        </div>
       </div>
 
       <Projects title={projects.title} cards={projects.cards} />

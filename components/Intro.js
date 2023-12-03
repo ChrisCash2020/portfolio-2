@@ -1,8 +1,8 @@
-import React from 'react'
-import getConfig from 'next/config'
-import Link from 'next/link'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-const { publicRuntimeConfig } = getConfig()
+import React from 'react';
+import getConfig from 'next/config';
+import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+const { publicRuntimeConfig } = getConfig();
 
 export const Intro = ({ title, description, image, icons }) => {
   return (
@@ -46,18 +46,14 @@ export const Intro = ({ title, description, image, icons }) => {
               width='250'
               height='250'
               src={image}
-              style={{
-                filter:
-                  'invert(29%) sepia(55%) saturate(430%) hue-rotate(155deg) brightness(90%) contrast(81%)',
-              }}
               alt='profile of hashirshoaeb'
             />
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export const About = ({ title, description }) => {
   return (
@@ -71,5 +67,5 @@ export const About = ({ title, description }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

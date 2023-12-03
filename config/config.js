@@ -1,4 +1,4 @@
-import profile from './profile.png';
+import profile from './profile1.png';
 
 import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import {

@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 export const Projects = ({ title, cards }) => {
   return (
-    <div id='projects' className='bg-primary py-5 px-5'>
+    <div id='projects' className='bg-secondary py-5 px-5'>
       <div className='container'>
-        <h1 className='text-light fw-bold'>Projects</h1>
+        <h1 className='text-primary fw-bold'>Projects</h1>
         <div className='d-flex flex-row flex-wrap justify-content-center'>
           {cards.map((value, index) => (
             <Card
@@ -29,7 +29,7 @@ export const Card = ({ title, description, icons, img }) => {
     <div className='card py-3 px-3 mx-sm-4 my-4 card-work flip-card'>
       <div class='flip-card-inner'>
         <div className='flip-card-back d-flex flex-column '>
-          <h4 className='text-primary'>{title}</h4>
+          <h4 className='text-secondary'>{title}</h4>
           <p className='text-dark'>{description}</p>
         </div>
         <div className='flip-card-front'>

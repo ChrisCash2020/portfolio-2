@@ -38,7 +38,7 @@ export default function Home() {
       <About title={about.title} description={about.description} />
       <div className='bg-white'>
         <div className=' container px-2 py-5 d-flex flex-column'>
-          <h1 className='text-primary fw-bold'>Skills</h1>
+          <h1 className='text-secondary fw-bold mb-3'>Skills</h1>
 
           <Tabs className='skills-tabs' defaultActiveKey='first'>
             <Tab

@@ -16,7 +16,7 @@
 // $inverted-font: #FFFFFF;
 
 // bootstrap overrides
-$primary: #ff8a37;
+$primary: #f2eeeb;
 $secondary: rgb(37, 37, 37);
 $light: #f3f3f3;
 
@@ -141,7 +141,7 @@ a {
 
 .card-image:hover {
   transform: translate(-0.5rem, -0.5rem);
-  box-shadow: 2rem 2rem black;
+  box-shadow: 2rem 2rem $primary;
 }
 .skills-img {
   width: 100%;
@@ -170,6 +170,7 @@ a {
 }
 .links a {
   cursor: pointer;
+  color: $secondary;
 }
 .special svg {
   // -moz-transition: background-color 0.2s ease-in-out;
@@ -177,7 +178,7 @@ a {
   // -ms-transition: background-color 0.2s ease-in-out;
   // transition: background-color 0.2s ease-in-out;
   border-radius: 100%;
-  border: solid 2px rgba(33, 33, 33, 0.2);
+  border: solid 2px $secondary;
   vertical-align: middle;
   width: 2em;
   font-size: 0.7em;
@@ -186,7 +187,6 @@ a {
   height: 2em;
   text-indent: 0.15em;
   vertical-align: middle;
-  color: rgba(33, 33, 33, 0.2);
   margin-right: 0.85em;
 }
 .flip-card {
@@ -260,12 +260,16 @@ a {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: white;
-  background-color: $primary;
-  border-color: $primary;
+  --bs-nav-tabs-border-width: 2px;
+  background-color: $secondary;
+  border-bottom: 2px solid $secondary;
+  border-color: $secondary;
 }
 
 .nav-tabs {
-  border-color: $primary;
+  color: black;
   --bs-nav-tabs-link-hover-border-color: transparent;
+  --bs-nav-tabs-border-color: rgb(37, 37, 37);
   --bs-nav-tabs-border-width: 2px;
+  --bs-nav-link-color: $secondary;
 }

@@ -39,12 +39,6 @@ export const intro = {
       title: 'Email',
       isPrimary: false,
     },
-    {
-      image: faFile,
-      url: 'https://drive.google.com/file/d/15oYO7IPQDksXFJwV_Q_pmLXCYrmX1Zt9/view?usp=sharing',
-      title: 'Resume',
-      isPrimary: false,
-    },
   ],
 };
 

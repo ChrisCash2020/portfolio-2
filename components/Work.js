@@ -5,7 +5,7 @@ export const Projects = ({ title, cards }) => {
   return (
     <div id='projects' className='bg-secondary py-5 px-5'>
       <div className='container'>
-        <h1 className='text-primary fw-bold'>Projects</h1>
+        <h1 className='text-light fw-bold'>Projects</h1>
         <div className='d-flex flex-row flex-wrap justify-content-center'>
           {cards.map((value, index) => (
             <Card

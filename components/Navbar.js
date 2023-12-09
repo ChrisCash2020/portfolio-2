@@ -7,7 +7,7 @@ export const Nav = ({ title, links }) => {
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
   return (
-    <nav className='navbar navbar-expand-sm navbar-light bg-primary'>
+    <nav className='navbar navbar-expand-sm text-secondary navbar-light bg-light'>
       <div className='container'>
         <Link href='/'>
           {/* <Image src={Logo} alt="Logo" width="36" height="36" className="vertical-align-middle" /> */}

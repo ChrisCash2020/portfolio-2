@@ -36,13 +36,13 @@ export default function Home() {
         icons={intro.icons}
       />
       <About title={about.title} description={about.description} />
-      <div className='bg-white'>
-        <div className=' container px-2 py-5 d-flex flex-column'>
+      <div className='bg-light'>
+        <div className=' container px-2 pt-5 pb-3 d-flex flex-column'>
           <h1 className='text-secondary fw-bold mb-3'>Skills</h1>
 
           <Tabs className='skills-tabs' defaultActiveKey='first'>
             <Tab
-              tabClassName='skills-tab lead'
+              tabClassName='skills-tab lead mb-3'
               eventKey='first'
               title='Front-end'
             >
@@ -78,7 +78,7 @@ export default function Home() {
               </ul>
             </Tab>
             <Tab
-              tabClassName='skills-tab lead'
+              tabClassName='skills-tab lead mb-3'
               eventKey='second'
               title='Back-end'
             >

@@ -6,17 +6,17 @@ const { publicRuntimeConfig } = getConfig();
 
 export const Intro = ({ title, description, image, icons }) => {
   return (
-    <div className='bg-secondary py-5 px-5'>
+    <div className='bg-light py-5 px-5'>
       <div className='container'>
         <div className=' row align-items-center'>
           <div className='col-sm-6'>
-            <h1 className='text-primary fw-bold display-3'>{title}</h1>
+            <h1 className='text-secondary fw-bold display-3'>{title}</h1>
             <p>{description}</p>
             <div className='text-center'>
               {icons.map((icon, index) =>
                 icon.isPrimary ? (
                   <Link key={index} href={icon.url}>
-                    <a className='btn btn-outline-primary my-1 mx-3'>
+                    <a className='btn btn-outline-secondary my-1 mx-3'>
                       <FontAwesomeIcon
                         className='icon-style mx-3'
                         icon={icon.image}
@@ -27,7 +27,7 @@ export const Intro = ({ title, description, image, icons }) => {
                   </Link>
                 ) : (
                   <Link key={index} href={icon.url}>
-                    <a className='btn btn-outline-primary my-1 mx-3'>
+                    <a className='btn btn-outline-secondary my-1 mx-3'>
                       <FontAwesomeIcon
                         className='icon-style mx-3'
                         icon={icon.image}
@@ -40,13 +40,11 @@ export const Intro = ({ title, description, image, icons }) => {
               )}
             </div>
           </div>
-          <div className='col-sm-6 text-center'>
+          <div className='col-sm-6 text-center card-image-container'>
             <img
               className='img-fluid my-3 card-image'
-              width='250'
-              height='250'
               src={image}
-              alt='profile of hashirshoaeb'
+              alt='profile of christian olowokere'
             />
           </div>
         </div>

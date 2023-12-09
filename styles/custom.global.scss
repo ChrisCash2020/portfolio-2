@@ -167,11 +167,18 @@ a {
   align-items: center;
   justify-content: center;
 }
-.skills li img {
+.skills li img:not(.java-img) {
   height: 70px;
   width: 70px;
   object-fit: scale-down;
 }
+
+.java-img {
+  height: 60px;
+  width: 60px;
+  object-fit: fill;
+}
+
 .links a {
   cursor: pointer;
   color: $secondary;

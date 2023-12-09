@@ -23,6 +23,7 @@ import jwt from '../config/jwt.png';
 import mui from '../config/mui.png';
 import redux from '../config/redux.png';
 import tailwind from '../config/tailwind.png';
+import java from '../config/java.png';
 
 export default function Home() {
   return (
@@ -106,6 +107,9 @@ export default function Home() {
                 </li>
                 <li>
                   <img alt='' src={elasticsearch.src} />
+                </li>
+                <li>
+                  <img className='java-img' alt='' src={java.src} />
                 </li>
               </ul>
             </Tab>
